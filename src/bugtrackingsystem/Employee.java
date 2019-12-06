@@ -9,11 +9,9 @@ import java.util.*;
 import javax.mail.*;  
 import javax.mail.internet.*;
 
-public class Employee {
-    public void SendEmail(){
+public class Employee{
+    public void SendEmail(String senderEmail,String destinationEmail){
         
-        String destinationEmail = "DeveloperMaialFromDataBase@gmail.com"; 
-        String senderEmail= "yanicha93@gmail.com";
         String host= "localhost";
         Properties props=System.getProperties();
         props.put("mail.smtp.auth",host);
