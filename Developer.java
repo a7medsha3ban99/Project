@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bugtrackingsystem;
+package developer;
 
 import java.util.Scanner;
 
@@ -11,18 +11,28 @@ import java.util.Scanner;
  *
  * @author Ezz Atef
  */
-public class Developer {
-     public void changestatusbugs(){
+public class Developer{
+
+    public void changestatusbugs(){
+    try{
         Scanner sc=new Scanner(System.in);
     String d = sc.next();
-    if( "Y".equals(d)){
+    if( "YES".equals(d)){
         System.out.println("status is solved");
     }
-    if( "N".equals(d)){
+    if( "NO".equals(d)){
         System.out.println("status is not solved");
         }
-    
-    
+    }catch(Exception e){
+        System.out.println("Wronge entry");
     }
-   
+    
+public void viewassignedbugs(){
+        
+    }
+    public static void main(String[] args) {
+        Developer n=new Developer();
+        n.changestatusbugs();
+    }
+    
 }

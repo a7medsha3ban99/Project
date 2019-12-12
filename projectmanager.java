@@ -3,19 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bugtrackingsystem;
+package developer;
 
 /**
  *
  * @author Ezz Atef
  */
 public class projectmanager {
-    public void show_performance(boolean status){
-        if(status==false){
-            System.out.println("status is true");
+    public void show_performance(){
+        Bugs b=new Bugs();
+        if(b.status==false){
+            b.status="True";
         }
         else{
-            System.out.println("status is false");
+            b.status="false";
         }
     }
 }
